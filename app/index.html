@@ -7,14 +7,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="/node_modules/angular/angular.js"></script>
+        <script src="/node_modules/angular/angular.min.js"></script>
+        <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 
         <link rel="stylesheet" href="styles/styles.css">
     </head>
-    <body>
+    <body ng-app="directoryApp">
 
         <!-- Add content here -->
-        <p>Content</p>
+        <main ui-view></main>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
