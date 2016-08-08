@@ -1,5 +1,5 @@
 //initialize all of our variables
-var app, base, concat, directory, gulp, gutil, hostname, path, refresh, sass, uglify, imagemin, minifyCSS, del, browserSync, autoprefixer, gulpSequence, shell, sourceMaps, plumber, lost, postcss;
+var app, base, concat, directory, gulp, gutil, hostname, path, refresh, sass, uglify, imagemin, minifyCSS, del, browserSync, autoprefixer, gulpSequence, shell, sourceMaps, plumber, lost, postcss, browserify;
 
 var autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
 
@@ -19,6 +19,7 @@ shell           = require('gulp-shell');
 plumber         = require('gulp-plumber');
 lost            = require('lost');
 postcss         = require('gulp-postcss');
+browserify      = require('browserify');
 
 //fires up browserSync
 gulp.task('browserSync', function() {
@@ -32,7 +33,6 @@ gulp.task('browserSync', function() {
         notify: false
     });
 });
-
 
 //compressing images & handle SVG files
 gulp.task('images', function(tmp) {
