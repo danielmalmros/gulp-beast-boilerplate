@@ -1,32 +1,62 @@
 <!doctype html>
 <html class="no-js" lang="da">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Website Title</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="/node_modules/angular/angular.min.js"></script>
-        <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Website Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
-    <body ng-app="directoryApp">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
 
-        <!-- Add content here -->
-        <main ui-view></main>
+<body ng-app="directoryApp">
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+    <!-- Add content here -->
 
-        <script src="scripts/app.js"></script>
-    </body>
+    <form name="myForm" ng-controller="ExampleController">
+  <label>Single word:
+    <input type="text" name="input" ng-model="example.text"
+           ng-pattern="example.word" required ng-trim="false">
+  </label>
+  <div role="alert">
+    <span class="error" ng-show="myForm.input.$error.required">
+      Required!</span>
+    <span class="error" ng-show="myForm.input.$error.pattern">
+      Single word only!</span>
+  </div>
+    <main ui-view></main>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+  angular.module('textInputExample', [])
+    .controller('ExampleController', ['$scope', function($scope) {
+      $scope.example = {
+        text: 'guest',
+        word: /^\s*\w*\s*$/
+      };
+    }]);
+</script>
+
+    <script src="scripts/app.js"></script>
+</body>
+
 </html>
