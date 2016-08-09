@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="da">
+<html ng-app>
 
 <head>
     <meta charset="utf-8">
@@ -8,25 +8,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="scripts\lib\angular.min.js"></script>
+
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body ng-app="directoryApp">
+<body>
+    <input type="text" ng-model="yourName">
+
+    <h1>{{yourName}}</h1>
 
     <!-- Add content here -->
-
-    <form name="myForm" ng-controller="ExampleController">
-  <label>Single word:
-    <input type="text" name="input" ng-model="example.text"
-           ng-pattern="example.word" required ng-trim="false">
-  </label>
-  <div role="alert">
-    <span class="error" ng-show="myForm.input.$error.required">
-      Required!</span>
-    <span class="error" ng-show="myForm.input.$error.pattern">
-      Single word only!</span>
-  </div>
-    <main ui-view></main>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -45,16 +37,6 @@
         ga('create', 'UA-XXXXX-X', 'auto');
         ga('send', 'pageview');
     </script>
-
-    <script>
-  angular.module('textInputExample', [])
-    .controller('ExampleController', ['$scope', function($scope) {
-      $scope.example = {
-        text: 'guest',
-        word: /^\s*\w*\s*$/
-      };
-    }]);
-</script>
 
     <script src="scripts/app.js"></script>
 </body>
