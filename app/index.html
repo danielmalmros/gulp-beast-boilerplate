@@ -4,21 +4,47 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Website Title</title>
+    <title>Tablet Screen</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="scripts\lib\angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue/1.0.26/vue.min.js"></script>
 
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <input type="text" ng-model="yourName">
 
-    <h1>{{yourName}}</h1>
 
     <!-- Add content here -->
+    <div id="app">
+        <header>
+            <img src="http://www.eaaa.dk/frontend/images/dist/logo_da_x2.png" alt="Eaaa" />
+        </header>
+
+        <div class="room-number">
+            <h1>Room {{message}}</h1>
+            <input v-model="message" maxlength="4">
+            <p>Type here to change the room number!</p>
+        </div>
+
+        <div class="footer">
+            <div class="time">
+                <ul id="time-date">
+                    <li v-for="time in times">
+                        {{time.message}}
+                    </li>
+                </ul>
+            </div>
+            <div class="classes">
+                <ul id="class">
+                    <li v-for="class in classes">
+                        {{class.message}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
