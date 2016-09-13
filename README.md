@@ -15,5 +15,7 @@ When project is ready to deploy, simply do the following:
 * Run `gulp deploy`
 * All of the files you need will be in /dist with your images optimized, css compressed and js compressed!
 
-New added
+Contributors
 ==========================
+
+Jacob Thesbjerg
