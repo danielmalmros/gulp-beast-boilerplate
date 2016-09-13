@@ -1,7 +1,7 @@
 Frontend Gulp Boilerplate
 ==========================
 
-Personalized Frontend workflow from Harvest Boilerplate by Daniel Malmros.
+Personalized Frontend workflow based on Harvest Boilerplate by Daniel Malmros.
 
 You'll need to have Gulp installed. If you already have Gulp installed, you can skip the following line.
 To install gulp simply run the following line in your terminal:
