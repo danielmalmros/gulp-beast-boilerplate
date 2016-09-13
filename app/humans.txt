@@ -11,6 +11,6 @@
     CSS3 (Preprocessor = SCSS)
     Apache Server Configs
     jQuery
-    AngularJS
+    Vue.js
     Modernizr
     Normalize.css
