@@ -8,10 +8,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.2/vue-resource.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.13/vue-router.min.js"></script>
-
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -19,21 +15,7 @@
 
     <!-- Add content here -->
     <div id="app">
-        <div class="input_wrapper">
-            <input class="basic-slide" type="text" placeholder="Søg" v-model="name">
-            <input class="basic-slide" type="text" placeholder="Tilføj navn" v-model="newExtra" v-on:keyup.enter="addExtra">
-        </div>
-        <ul class="list_wrapper">
-            <li class="user" v-for="error in errors">
-                <span>{{ error.status }}</span><br>
-                <span>{{ error.source.pointer }}</span><br>
-                <span>{{ error.title }}</span><br>
-                <span>{{ error.detail }}</span>
-            </li>
-            <li class="user" v-for="extra in extras | filterBy name in 'name' | orderBy 'name">
-                {{ extra.name }}
-            </li>
-        </ul>
+
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

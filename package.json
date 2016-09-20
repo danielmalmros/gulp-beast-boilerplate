@@ -23,8 +23,6 @@
     "gulp-util": "^3.0.6",
     "gulp-webserver": "^0.9.1",
     "lost": "^7.0.3",
-    "vue": "^1.0.26",
-    "vue-resource": "^1.0.2",
     "vueify": "^8.7.0"
   }
 }

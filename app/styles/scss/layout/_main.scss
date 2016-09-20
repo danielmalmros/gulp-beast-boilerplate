@@ -1,69 +1,52 @@
-.user {
-    height: auto;
-    line-height: 30px;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-}
+#app {
+    background: lighten(#2C2828, 10%);
+    height: 100vh;
 
-.input_wrapper {
-    margin: 0 auto;
-    width: 980px;
-    padding-top: 50px;
-}
-
-.list_wrapper {
-    margin: 0 auto;
-    width: 980px;
-    list-style-type: none;
-}
-
-.basic-slide {
-    display: inline-block;
-    width: 215px;
-    padding: 10px 0 10px 15px;
-    font-family: "Open Sans", sans;
-    font-weight: 400;
-    color: #377D6A;
-    background: #377D6A;
-    border: 0;
-    border-radius: 3px;
-    outline: 0;
-    text-indent: 70px; // Arbitrary.
-    transition: all 0.3s ease-in-out;
-
-    &::-webkit-input-placeholder {
-        color: #efefef;
-        text-indent: 0;
-        font-weight: 300;
+    header {
+        background: #f5f5f5;
+        box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.75);
     }
 
-    + label {
-        display: inline-block;
+    .room-number {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        padding: 10%;
+        h1 {
+            font-size: 120px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 900;
+        }
+        p {
+            font-size: 12px;
+            color: #fff;
+            font-family: sans-serif;
+        }
+    }
+
+    .footer {
+        box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.75);
+        width: 100%;
+        height: 200px;
+        background: #f5f5f5;
         position: absolute;
-        top: 0;
+        right: 0;
+        bottom: 0;
         left: 0;
-        padding: 10px 15px;
-        text-shadow: 0 1px 0 rgba(19,74,70,.4);
-        background: #7AB893;
-        transition: all 0.3s ease-in-out;
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-    }
-}
+        display: flex;
 
-.basic-slide:active,
-.basic-slide:focus {
-    color: #377D6A;
-    text-indent: 0;
-    background: #eee;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-
-    &::-webkit-input-placeholder {
-        color: #aaa;
-    }
-
-    + label {
-        transform: translateX(-100%);
+        .time {
+            width: 50%;
+            ul {
+                list-style-type: none;
+            }
+        }
+        .classes {
+            width: 50%;
+            ul {
+                list-style-type: none;
+            }
+        }
     }
 }
