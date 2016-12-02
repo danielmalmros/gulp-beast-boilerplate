@@ -1,7 +1,7 @@
-Frontend Gulp Boilerplate
+Beast Gulp Boilerplate
 ==========================
 
-Personalized Frontend workflow based on Harvest.
+Personalized boilerplate based on Harvest...
 This boilerplate contains a starting structure for writing ECMAScript 6 applications.
 
 You'll need to have Gulp installed. If you already have Gulp installed, you can skip the following line.
@@ -35,9 +35,11 @@ In order to ensure that all dependencies are updated use:
 
 https://www.npmjs.org/package/npm-check-updates
 
-$ npm install -g npm-check-updates
-$ npm-check-updates -u
-$ npm install
+$ `npm install -g npm-check-updates`
+
+$ `npm-check-updates -u`
+
+$ `npm install`
 
 This will automatically adjusts a package.json with the latest version of all dependencies!
 
