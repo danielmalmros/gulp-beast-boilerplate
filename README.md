@@ -2,6 +2,7 @@ Beast Gulp Boilerplate
 ==========================
 
 Personalized boilerplate based on Harvest...
+
 This boilerplate contains a starting structure for writing ECMAScript 6 applications.
 
 You'll need to have Gulp installed. If you already have Gulp installed, you can skip the following line.
