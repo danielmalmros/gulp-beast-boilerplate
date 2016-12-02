@@ -1,4 +1,4 @@
-Beast Gulp Boilerplate
+Gulp Beast Boilerplate
 ==========================
 
 Personalized boilerplate based on Harvest...
