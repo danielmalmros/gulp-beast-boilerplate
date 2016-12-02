@@ -1,15 +1,16 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
+# PERSON / TEAM
 
-    <name> -- <role> -- <twitter>
+    Daniel Malmros -- Frontend Developer -- https://github.com/danielmalmros
 
-# THANKS
+# TECHNOLOGY USED IN PROJECT
 
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    HTML5
+    CSS3 (Preprocessor = SCSS)
+    Apache Server Configs
+    jQuery
+    Vue.js
+    Modernizr
+    Normalize.css
