@@ -5,6 +5,8 @@ Personalized boilerplate based on Harvest...
 
 This boilerplate contains a starting structure for writing ECMAScript 6 applications.
 
+* First of all download or clone this repo ;P
+
 You'll need to have Gulp installed. If you already have Gulp installed, you can skip the following line.
 To install gulp simply run the following line in your terminal:
 * `npm install -g gulp`
